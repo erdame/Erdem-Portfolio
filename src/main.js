@@ -43,12 +43,19 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div id="images-description">
           <div id="images">
-            ${collages
-              .map(
-                (collage, index) => `<img src="${collage}" alt="collage${index + 1}" />`
-              )
-              .join("")}
-          </div>
+  <a href="https://erdem-portfolio.vercel.app/image1" target="_blank">
+    <img src="./website/collage 1.jpg" alt="collage 1" />
+  </a>
+  <a href="https://erdem-portfolio.vercel.app/image2" target="_blank">
+    <img src="./website/collage 2.jpg" alt="collage 2" />
+  </a>
+  <a href="https://erdem-portfolio.vercel.app/image3" target="_blank">
+    <img src="./website/gallery source.jpg" alt="gallery source" />
+  </a>
+  <a href="https://erdem-portfolio.vercel.app/image4" target="_blank">
+    <img src="./website/gallery source 2.jpg" alt="gallery source 2" />
+  </a>
+</div>
           <h4 id="description">This collage explores the profound connection between identity and ancestry. Growing up in the mountains of Mongolia, surrounded by traditions, nature, and the heritage of my ancestors, has deeply shaped who I am today. Each layer of the collage represents a step in my personal evolution, seamlessly blending past and present. The process of creating this piece taught me to critically examine how my cultural roots influence my aspirations. The accompanying quote, "Let the whispers of your ancestors guide you towards wisdom," encapsulates the message of honoring one's origins while embracing growth. This experience highlighted the power of storytelling through visual language and deepened my understanding of blending traditional and digital art to convey complex ideas.</h4>
         </div>
       </div>
