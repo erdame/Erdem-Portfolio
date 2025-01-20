@@ -7,6 +7,7 @@ const collages = [
   "./website/collage 2.jpg",
   "./website/gallery source.jpg",
   "./website/gallery source 2.jpg",
+
 ];
 
 const trees = [
@@ -59,7 +60,7 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">This collage explores the profound connection between identity and ancestry. Growing up in the mountains of Mongolia, surrounded by traditions, nature, and the heritage of my ancestors, has deeply shaped who I am today. Each layer of the collage represents a step in my personal evolution, seamlessly blending past and present. The process of creating this piece taught me to critically examine how my cultural roots influence my aspirations. The accompanying quote, "Let the whispers of your ancestors guide you towards wisdom," encapsulates the message of honoring one's origins while embracing growth. This experience highlighted the power of storytelling through visual language and deepened my understanding of blending traditional and digital art to convey complex ideas.</h4>
         </div>
       </div>
-
+<img src="./ezgif.com-optimize.gif" id="model1" alt="Model 1 Image" />
       ${/* Model 2 commented out   
       <div id="project-row">
       Model 2
