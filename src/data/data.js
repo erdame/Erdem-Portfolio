@@ -1,7 +1,7 @@
 // CUSTOMIZE THIS FILE TO ADD YOUR OWN DATA
 
 const data = {
-    name: "Erdem Chinbat",
+    name: "ERDEM CHINBAT",
     bio: "Bachelor of Design in City Innovation student at the University of Calgary, passionate about designing dynamic, inclusive community spaces.",
     contact: {
         email: "erdem.chinbat@ucalgary.ca",

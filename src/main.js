@@ -43,16 +43,16 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div id="images-description">
           <div id="images">
-  <a href="https://erdem-portfolio.vercel.app/image1" target="_blank">
+  <a href="./website/collage 1.jpg" target="_blank">
     <img src="./website/collage 1.jpg" alt="collage 1" />
   </a>
-  <a href="https://erdem-portfolio.vercel.app/image2" target="_blank">
+  <a href="./website/collage 2.jpg" target="_blank">
     <img src="./website/collage 2.jpg" alt="collage 2" />
   </a>
-  <a href="https://erdem-portfolio.vercel.app/image3" target="_blank">
+  <a href="./website/gallery source.jpg" target="_blank">
     <img src="./website/gallery source.jpg" alt="gallery source" />
   </a>
-  <a href="https://erdem-portfolio.vercel.app/image4" target="_blank">
+  <a href="./website/gallery source 2.jpg" target="_blank">
     <img src="./website/gallery source 2.jpg" alt="gallery source 2" />
   </a>
 </div>
