@@ -2,11 +2,11 @@ import "./style.css";
 import data from "./data/data";
 import { createThreeScene } from "./threeScene";
 
-const cubes = [
-  "./cubeDrawings/cube1.webp",
-  "./cubeDrawings/cube2.webp",
-  "./cubeDrawings/cube3.webp",
-  "./cubeDrawings/cube4.webp",
+const collages = [
+  "./website/collage 1.jpg",
+  "./website/collage 2.jpg",
+  "./website/gallery source.jpg",
+  "./website/gallery source 2.jpg",
 ];
 
 const trees = [
@@ -16,31 +16,44 @@ const trees = [
   "./treeDrawings/tree4.jpg",
 ];
 
+const houses = [
+  "./houseDrawings/house1.jpg",
+  "./houseDrawings/house2.jpg",
+  "./houseDrawings/house3.jpg",
+  "./houseDrawings/house4.jpg",
+];
+
 document.querySelector("#app").innerHTML = `
   <main id="container">
     <section id="heading">
       <h1>${data.name}</h1>
       <p>${data.bio}</p>
+
+      <br>
+      
+      
+      "Whispers of Love, Echoes of the Past"
     </section>
 
     <section id="projects">
       <div id="project-row">
-      Model 1
+     
         <div class="three-model">
-          <div id="model1"></div>
+          <img src="./Exquisite corpse  final.jpg" id="model1" alt="Model 1 Image" />
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
+            ${collages
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+                (collage, index) => `<img src="${collage}" alt="collage${index + 1}" />`
               )
               .join("")}
           </div>
-          <h4 id="description">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
+          <h4 id="description">This collage explores the profound connection between identity and ancestry. Growing up in the mountains of Mongolia, surrounded by traditions, nature, and the heritage of my ancestors, has deeply shaped who I am today. Each layer of the collage represents a step in my personal evolution, seamlessly blending past and present. The process of creating this piece taught me to critically examine how my cultural roots influence my aspirations. The accompanying quote, "Let the whispers of your ancestors guide you towards wisdom," encapsulates the message of honoring one's origins while embracing growth. This experience highlighted the power of storytelling through visual language and deepened my understanding of blending traditional and digital art to convey complex ideas.</h4>
         </div>
       </div>
 
+      ${/* Model 2 commented out   
       <div id="project-row">
       Model 2
         <div class="three-model">
@@ -58,7 +71,9 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
         </div>
       </div>
+      */ ""} 
 
+      ${/* Model 3 commented out 
       <div id="project-row">
       Model 3
         <div class="three-model">
@@ -66,9 +81,9 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
+            ${houses
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+                (house, index) => `<img src="${house}" alt="house${index + 1}" />`
               )
               .join("")}
           </div>
@@ -76,6 +91,7 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
     </section>
+    */ ""} 
 
     <ul id="footer-items">
       <li>Email: ${data.contact.email}</li>
@@ -91,6 +107,6 @@ document.querySelector("#app").innerHTML = `
 `;
 
 // Create three.js scenes for each
-createThreeScene("#model1", "/3DModels/project1/cube.obj");
-createThreeScene("#model2", "/3DModels/project2/tree.obj");
-createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+// createThreeScene("#model1", "/3DModels/project1/cube.obj");
+// createThreeScene("#model2", "/3DModels/project2/tree.obj");
+// createThreeScene("#model3", "/3DModels/project3/cottage.obj");

@@ -1,10 +1,10 @@
 :root {
   /* Global font, line-height, and colors */
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgb(255, 255, 255);
+  background-color: #202020;
 }
 
 * {
@@ -24,7 +24,7 @@
 #container {
   /* Main container padding */
   flex-grow: 1;
-  padding: 20px;
+  padding: 15px;
 }
 
 #footer-items {
@@ -37,20 +37,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
+  background-color: #8ad0f9b9;
+  color: rgb(255, 255, 255);
   z-index: 10;
 }
 
 a {
   /* Link styling */
-  color: #8da3eb;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover {
   /* Link hover effects */
-  color: #4c6aca;
+  color: #000000;
   text-decoration: underline;
   transition: 0.2s;
 }
@@ -75,14 +75,14 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10em;
+  margin-bottom: 25em;
 }
 
 #project-row {
   /* Row layout for projects */
   display: flex;
   justify-content: center;
-  padding-top: 5em;
+  padding-top: 2em;
 }
 
 .three-model {
@@ -95,27 +95,27 @@ h1 {
 #model1,
 #model2,
 #model3 {
-  height: 300px;
-  width: 300px;
-  margin-right: 3em;
-  margin-left: 6em;
-  border: 1px solid #ccc;
+  height: 525px;
+  width: 425px;
+  margin-right: 6em;
+  margin-left: 10em;
+  border: 0px solid #ccc;
 }
 
 img {
   /* Image dimensions and margin */
-  height: 120px;
-  width: 120px;
-  margin: 0.5em;
+  height: 160px;
+  width: 200px;
+  margin: 0.8em;
 }
 
 #images {
   /* Center image container */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 8em;
-  margin-bottom: 2em;
+  display: inline-flexbox;
+  justify-content: left;
+  align-items: left;
+  height: 10em;
+  margin-bottom: 1em;
 }
 
 #images-row {
@@ -129,24 +129,24 @@ img {
 #description {
   /* Center description content */
   display: flex;
-  align-items: center;
-  height: 4em;
-  width: 35em;
+  align-items: left;
+  height: 6em;
+  width: 45em;
   font-weight: 100;
-  margin-left: 2em;
-  margin-top: 3em;
+  margin-left: 0em;
+  margin-top: 16em;
 }
 
 @media screen and (max-width: 768px) {
   #footer-items {
     /* Responsive footer styling */
     flex-direction: column;
-    align-items: flex-start;
+    align-items: first baseline;
     padding: 1rem;
   }
 
   #footer-items p {
     /* Adjust footer paragraph margin on smaller screens */
-    margin: 5px 0;
+    margin: 2px 0;
   }
 }
