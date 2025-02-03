@@ -49,6 +49,13 @@ export function createThreeScene(containerSelector, objPath) {
   const objLoader = new OBJLoader();
 
   objLoader.load(
+    
+    
+
+
+
+
+
     objPath,
     (object) => {
       object.traverse((child) => {

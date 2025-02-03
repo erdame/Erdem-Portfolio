@@ -17,11 +17,11 @@ const trees = [
   "./treeDrawings/tree4.jpg",
 ];
 
-const houses = [
-  "./houseDrawings/house1.jpg",
-  "./houseDrawings/house2.jpg",
-  "./houseDrawings/house3.jpg",
-  "./houseDrawings/house4.jpg",
+const A2 = [
+  "./A2/Comparison 1.jpg",
+  "./A2/chart 2.jpg",
+  "./A2/chart 3.jpg",
+  "./A2/Model.jpg",
 ];
 
 document.querySelector("#app").innerHTML = `
@@ -61,6 +61,7 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
 <img src="./ezgif.com-optimize.gif" id="model1" alt="Model 1 Image" />
+
       ${/* Model 2 commented out   
       <div id="project-row">
       Model 2
@@ -81,21 +82,28 @@ document.querySelector("#app").innerHTML = `
       </div>
       */ ""} 
 
-      ${/* Model 3 commented out 
+       Assignment 2
       <div id="project-row">
-      Model 3
+      
         <div class="three-model">
           <div id="model3"></div>
         </div>
         <div id="images-description">
           <div id="images">
-            ${houses
-              .map(
-                (house, index) => `<img src="${house}" alt="house${index + 1}" />`
-              )
-              .join("")}
-          </div>
-          <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
+  <a href="./A2/Comparison 1.jpg" target="_blank">
+    <img src="./A2/Comparison 1.jpg" alt="Comparison 1" />
+  </a>
+  <a href="./A2/chart 2.jpg" target="_blank">
+    <img src="./A2/chart 2.jpg" alt="chart 2" />
+  </a>
+  <a href="./A2/chart 3.jpg" target="_blank">
+    <img src="./A2/chart 3.jpg" alt="chart 3" />
+  </a>
+  <a href="./A2/Model.jpg" target="_blank">
+    <img src="./A2/Model.jpg" alt="model" />
+  </a>
+</div>
+          <h4 id="description">This assignment made me appreciate the technical aspect of 3D modeling more than before. Making something appear attractive is only one aspect of it; another is ensuring that it functions well with various programs and applications. Even though I still have a lot to learn, I think I'm beginning to grasp the connections between 3D workflows, which will be useful for projects in the future. </h4>
         </div>
       </div>
     </section>
@@ -115,6 +123,6 @@ document.querySelector("#app").innerHTML = `
 `;
 
 // Create three.js scenes for each
-// createThreeScene("#model1", "/3DModels/project1/cube.obj");
-// createThreeScene("#model2", "/3DModels/project2/tree.obj");
-// createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+//  createThreeScene("#model1", "/3D file/ model 3 export 2.obj");
+//  createThreeScene("#model2", "/3DModels/project2/tree.obj");
+createThreeScene("#model3", "/3DModels/project3/model 3 export 9.obj");

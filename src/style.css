@@ -101,8 +101,7 @@ h1 {
 }
 
 #model1,
-#model2,
-#model3 {
+#model2 {
   height: 570px;
   width: 470px;
   margin-right: 6em;
@@ -153,7 +152,57 @@ img {
   color: #fdffd0;  
   
 }
+#model3 {
+  height: 570px;
+  width: 470px;
+  margin-right: 6em;
+  margin-left: 12em;
+  margin-bottom: 10em;
+  border: 0px solid #ccc;
+}
 
+
+img {
+  /* Image dimensions and margin */
+  height: 300px;
+  width: 200px;
+  margin: 0.8em;
+}
+
+#images {
+  /* Center image container */
+  display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      grid-template-rows: repeat(2, 1fr);  
+      gap: 10px; 
+      width: 300px; 
+      height: 300px; 
+}
+
+
+#images-row {
+  /* Row layout for images */
+  display: flex;
+  align-items: center;
+  align-items: center;
+  position: relative;
+}
+
+#description {
+  /* Center description content */
+  display: flex;
+  align-items: left;
+  height: 6em;
+  width: 45em;
+  font-weight: 300;
+  margin-left: 0em;
+  margin-top: 30em;
+  margin-bottom: 10em;
+  font-size: 0.9rem;  
+  line-height: 1.6;  
+  color: #fdffd0;  
+  
+}
 @media screen and (max-width: 768px) {
   #footer-items {
     /* Responsive footer styling */
