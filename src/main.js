@@ -103,7 +103,7 @@ document.querySelector("#app").innerHTML = `
     <img src="./A2/Model.jpg" alt="model" />
   </a>
 </div>
-          <h4 id="description">This assignment made me appreciate the technical aspect of 3D modeling more than before. Making something appear attractive is only one aspect of it; another is ensuring that it functions well with various programs and applications. Even though I still have a lot to learn, I think I'm beginning to grasp the connections between 3D workflows, which will be useful for projects in the future. </h4>
+          <h4 id="description">This assignment made me appreciate the technical aspect of 3D modeling more than before. Making something appear attractive is only one aspect of it; another is ensuring that it functions well with various programs and applications. Even though I still have a lot to learn, I think I'm beginning to grasp the connections between 3D workflows, which will be useful for projects in the future. git add .</h4>
         </div>
       </div>
     </section>
@@ -125,4 +125,4 @@ document.querySelector("#app").innerHTML = `
 // Create three.js scenes for each
 //  createThreeScene("#model1", "/3D file/ model 3 export 2.obj");
 //  createThreeScene("#model2", "/3DModels/project2/tree.obj");
-createThreeScene("#model3", "/3DModels/project3/model 3 export 9.obj");
+createThreeScene("#model3", "/3DModels/project3/Erdem model.obj");
